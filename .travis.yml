@@ -9,7 +9,7 @@ env:
     secure: lQmywIpFaClJHxQ8lBOOsEaM3xVhs8SOwu/MDIhXpmSUVrVQhbpTfHkax0J9pPEuVt7J7ZkiRx2EKfy7qndWx6ua5KybSVrsFGRdRgmSWOoF4NC9RflfI6Y8dsLgeks1cZB8U7WVGjbeJi++W0CM5PaEgFdIg8AB/NXfyuUpzwkUHCkT++rvdkilaLTgKZ6VDIrFbFGvtWhNm6Ocsp5r93tS0lJ++zJa1UpWu33VojlAWJ+o1dathYpGTS1Knuoip/U+kV3z8NtDEhkdozD7JOQ+2hM5FDxhn2dVzWVOVkKX077vK7H9tbUjhbhdT9aEnIZLfdcX75mKYApjsg7IYk/mUdIAffJloVxcqhVr1Y2O6PRd03bodbR2oS/PDVU/JooJ0/zPbz+3MYnYAf0bm82h2Qx0V2U/QA9Tu/dAJF4CuYHV48bTyMNwaQMi0QJAspFlN7V2wlG306W+iZyzNUm+yFZsPxUUDz+9kQN6AZHf0a8+xAlNM5YbrpCsIhX+z9LJ+ueZI/wPeYtIXRJG1Yavt5iJecps3mY0LhnInw6YUegF9uuXGUQSY5VmN6mt155130dw0nPWqfefQSVkNmuYlO1AL4rzJ61qRSGVPZXO7FOo4/XhB1+p8QY8bud+Z/4qouFP0yINMwObD5cs+A/fn8f5s64YkOK7z0bV6yM=
 before_install:
    - openssl aes-256-cbc -k "$super_secret_password" -in se234.pem.enc -out se234.pem -d
-  #  - sudo chmod 400 se234.pem
+   - sudo chmod 400 se234.pem
 addons:
   ssh_known_hosts:
     - 34.212.0.35
