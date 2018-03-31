@@ -1,0 +1,36 @@
+div{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 10px;
+	box-shadow: 10px 10px black;
+}
+div:nth-child(even){
+	animation-name: animate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes animate {
+	from {background-color: red;
+		color: white;
+	}
+	to {background-color: yellow;
+		color: black;
+	}
+}
+
+div:nth-child(odd){
+	background: linear-gradient(red, yellow);
+	transition: width 2s;
+}
+div:hover:nth-child(odd){
+	width: 300px;
+}
+
+.font{
+	font-size: 40px;
+	text-align: center;
+	font-family: Papyrus, fantasy;
+}

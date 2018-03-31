@@ -1,0 +1,37 @@
+.border{
+	border-left: 10px #D0D0FF dotted;
+}
+
+.font{
+	font-size: 40px;
+	font-family: Tahoma;
+	font-family: Tahoma;
+	color: black;
+}
+
+.font span{
+	padding-left: 10px;
+}
+
+div:hover{
+	color: goldenrod;
+	background-color: yellow;
+	cursor: pointer;
+}
+
+div{
+	width: 100px;
+	height: 150px;
+	display: inline-block;
+	background-color: #eeeff2;
+	margin-right: 10px;
+}
+div:last-child{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin-right: 0px;
+}
+body{
+	white-space:nowrap;
+}

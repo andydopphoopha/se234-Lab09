@@ -1,0 +1,7 @@
+language: node_js
+
+install: true
+script: true
+after_success:
+  - scp -i "se234.pem" -r html/* ubuntu@34.212.0.35:/var/www/html/
+  
